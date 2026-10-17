@@ -28,11 +28,13 @@ dropdownToggles.forEach((toggle) => {
         otherToggle.getAttribute("aria-controls"),
       );
       otherToggle.setAttribute("aria-expanded", "false");
+      otherToggle.closest(".nav-dropdown").classList.remove("link-open");
       otherDropdown.hidden = true;
     });
 
     if (!isExpanded) {
       toggle.setAttribute("aria-expanded", "true");
+      toggle.closest(".nav-dropdown").classList.add("link-open");
       dropdown.hidden = false;
     }
   });
@@ -43,6 +45,7 @@ document.addEventListener("keydown", (event) => {
     setMenuOpen(false);
     dropdownToggles.forEach((toggle) => {
       toggle.setAttribute("aria-expanded", "false");
+      toggle.closest(".nav-dropdown").classList.remove("link-open");
       document.getElementById(
         toggle.getAttribute("aria-controls"),
       ).hidden = true;

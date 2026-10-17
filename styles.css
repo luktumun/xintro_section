@@ -53,12 +53,12 @@ a:focus-visible {
   padding: 1.65rem 3.4rem;
 }
 
-.logo {
+.logo-link {
   display: inline-flex;
   flex: 0 0 auto;
 }
 
-.logo img {
+.logo {
   display: block;
   width: 5.4rem;
   height: auto;
@@ -322,7 +322,7 @@ a:focus-visible {
     padding: 0.95rem 1.4rem;
   }
 
-  .logo img {
+  .logo {
     width: 4rem;
   }
 
@@ -349,7 +349,7 @@ a:focus-visible {
 
   .overlay {
     position: fixed;
-    inset: 0;
+    inset: 0 min(17rem, 82vw) 0 0;
     z-index: 4;
     display: block;
     visibility: hidden;
