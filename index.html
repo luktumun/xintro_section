@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Snap helps your team make remote work work."
+    />
+    <meta name="theme-color" content="#fafafa" />
+    <title>Snap — Make remote work</title>
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#" aria-label="Snap home">
+        <img src="./assets/images/logo.svg" alt="snap's logo" />
+      </a>
+
+      <button
+        class="open-menu"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="overlay" aria-hidden="true"></div>
+
+      <nav class="navigation" id="primary-navigation" aria-label="Main menu">
+        <button class="close-menu" type="button" aria-label="Close menu">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li class="nav-link nav-dropdown">
+            <button
+              class="dropdown-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="features-dropdown"
+            >
+              Features <span class="chevron" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-list" id="features-dropdown" hidden>
+              <li class="dropdown-link">
+                <a href="#features" aria-label="todo-list">
+                  <span class="dropdown-icon icon-todo" aria-hidden="true">✓</span>
+                  Todo List
+                </a>
+              </li>
+              <li class="dropdown-link">
+                <a href="#features">
+                  <span class="dropdown-icon icon-calendar" aria-hidden="true">▦</span>
+                  Calendar
+                </a>
+              </li>
+              <li class="dropdown-link">
+                <a href="#features">
+                  <span class="dropdown-icon icon-reminders" aria-hidden="true">◷</span>
+                  Reminders
+                </a>
+              </li>
+              <li class="dropdown-link">
+                <a href="#features">
+                  <span class="dropdown-icon icon-planning" aria-hidden="true">◎</span>
+                  Planning
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-link nav-dropdown">
+            <button
+              class="dropdown-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="company-dropdown"
+            >
+              Company <span class="chevron" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-list" id="company-dropdown" hidden>
+              <li class="dropdown-link"><a href="#about">History</a></li>
+              <li class="dropdown-link"><a href="#about">Our team</a></li>
+              <li class="dropdown-link"><a href="#about">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-link"><a href="#careers">Careers</a></li>
+          <li class="nav-link"><a href="#about">About</a></li>
+        </ul>
+        <div class="registration">
+          <button class="login-button" type="button">Login</button>
+          <button class="register-button" type="button">Register</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-art">
+          <picture>
+            <source
+              media="(min-width: 48rem)"
+              srcset="./assets/images/image-hero-desktop.png"
+            />
+            <img
+              src="./assets/images/image-hero-mobile.png"
+              alt="A creative remote worker bringing ideas together"
+              width="640"
+              height="520"
+            />
+          </picture>
+        </div>
+        <div class="text-content">
+          <h1 id="hero-heading">Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a class="learn-more" href="#features">Learn More</a>
+          <div class="clients" aria-label="Our clients">
+            <img src="./assets/images/client-databiz.svg" alt="databiz" />
+            <img src="./assets/images/client-audiophile.svg" alt="audiophile" />
+            <img src="./assets/images/client-meet.svg" alt="meet" />
+            <img src="./assets/images/client-maker.svg" alt="maker" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://crio.do" target="_blank" rel="noopener noreferrer">Crio.do</a>.
+      Coded by <a href="#author">Ketan</a>.
+    </footer>
+  </body>
+</html>
